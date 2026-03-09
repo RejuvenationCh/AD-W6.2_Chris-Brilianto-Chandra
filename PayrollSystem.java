@@ -8,9 +8,16 @@ public class PayrollSystem {
             employees[2] = new Programmer("Citra", 4500000);
             employees[3] = new Intern("Dina", 2000000);
 
-        for (Employee employee : employees) {
-            employee.printInfo();
-        }
+        
+            double totalPayroll = 0;
+
+
+            for (Employee employee : employees) {
+                employee.printInfo();
+                System.err.println();
+                totalPayroll += employee.calculateSalary();
+            }
+            System.out.println("Total Payroll : " + totalPayroll);
 }
 }
 
