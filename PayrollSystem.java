@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 public class PayrollSystem {
 
         public static void main(String[] args) {   
@@ -17,7 +18,9 @@ public class PayrollSystem {
                 System.err.println();
                 totalPayroll += employee.calculateSalary();
             }
-            System.out.println("Total Payroll : " + totalPayroll);
+            DecimalFormat df = new DecimalFormat("#,###.0");
+            System.out.println("Total Payroll : " + df.format(totalPayroll));
+       
 }
 }
 
