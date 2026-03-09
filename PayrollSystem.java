@@ -20,6 +20,7 @@ public class PayrollSystem {
             }
             DecimalFormat df = new DecimalFormat("#,###.0");
             System.out.println("Total Payroll : " + df.format(totalPayroll));
+            System.out.println();
        
 }
 }
@@ -32,9 +33,9 @@ class Employee {
         this.baseSalary = baseSalary;
     }
         public void printInfo() {
-            System.out.println(name);
-            System.out.println(getRole());
-            System.out.println(calculateSalary());
+            System.out.println("Name : " + name);
+            System.out.println("Role : " + getRole());
+            System.out.println("Salary : " + calculateSalary());
          }
          
          public String getRole() {
