@@ -9,10 +9,7 @@ public class PayrollSystem {
             employees[2] = new Programmer("Citra", 4500000);
             employees[3] = new Intern("Dina", 2000000);
 
-        
             double totalPayroll = 0;
-
-
             for (Employee employee : employees) {
                 employee.printInfo();
                 System.out.println();
@@ -72,7 +69,6 @@ class Programmer extends Employee {
         return "Programmer";
     }
 }
-
 class Intern extends Employee {
     public Intern(String name, double baseSalary) {
         super(name, baseSalary);
@@ -86,4 +82,3 @@ class Intern extends Employee {
         return "Intern";
     }
 }
-
