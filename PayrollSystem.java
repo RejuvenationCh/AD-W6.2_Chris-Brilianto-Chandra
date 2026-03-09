@@ -16,6 +16,8 @@ class Employee {
     }
         public void printInfo() {
             System.out.println(name);
+            System.out.println(getRole());
+            System.out.println(calculateSalary());
          }
 
          public String getRole() {
@@ -51,7 +53,6 @@ class Programmer extends Employee {
     public String getRole() {
         return "Programmer";
     }
-
 }
 
 class Intern extends Employee {
