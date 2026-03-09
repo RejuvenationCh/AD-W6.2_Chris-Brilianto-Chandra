@@ -15,7 +15,7 @@ public class PayrollSystem {
 
             for (Employee employee : employees) {
                 employee.printInfo();
-                System.err.println();
+                System.out.println();
                 totalPayroll += employee.calculateSalary();
             }
             DecimalFormat df = new DecimalFormat("#,###.0");
